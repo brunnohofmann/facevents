@@ -1,4 +1,6 @@
-facevents
+Facevents
 =========
 
-Insira os participantes de um evento em seu site
+Insira os participantes de um evento em seu site.
+
+

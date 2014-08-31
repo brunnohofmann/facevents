@@ -1,6 +1,6 @@
 function facevents(id, token){
 
-    $(".facedata").html('<input type="text" value="" class="id_event form-control" required=""><br>'+
+    $(".facedata").html('<input type="text" value="" class="id_event form-control" title="Apenas confirmados de eventos públicos podem ser exibidos." required=""><br>'+
             '<select class="type form-control" required="">'+
             '<option>Selecione uma categoria</option>'+
             '<option value="invited">Convidados</option>'+
@@ -10,6 +10,9 @@ function facevents(id, token){
             '<option value="noreply">Não responderam</option>'+
         '</select>'+
         '<input type="submit" class="btn btn-large btn-block btn-primary" value="Descobrir"/>');
+    $(".id_event" ).tooltip({
+        track: true
+    });
 
 
     $(".facedata").submit(function(){
@@ -31,8 +34,10 @@ function facevents(id, token){
                 $(".result_face").html(resultado);
             }
         );
+
         return false;
 
 
     });
+
 }

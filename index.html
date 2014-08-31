@@ -21,6 +21,7 @@
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -120,7 +121,7 @@
                 <h3 class="text-left"><i>JavaScript</i></h3>
                 <p>1 - Baixa os <a href="">arquivos em Javascript</a></p>
                 <p>2 - Insira o arquivo JS no seu HTML
-                <p>&amp;lt;script src=&quot;facevents.js&quot;&amp;gt;&amp;lt;/script&gt;</p> </p>
+                <p><code>&lt;script src=&quot;facevents.js&quot;&gt;&lt;/script&gt;</code> </p>
                 <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
@@ -147,12 +148,13 @@
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>-->
+    <script src="js/jquery.easing.min.js"></script>
 
 
 
@@ -161,6 +163,7 @@
     <script src="facevents.js"></script>
     <script>
         $( document ).ready(function(){
+
             facevents(
                     //para saber os dados a seguir consulte a documentação
                     //sua id facebook
@@ -168,6 +171,7 @@
                     //sua chave de acesso facebook
                      "358ae752274cddfa67a8b770177c085b"
             );
+
         });
     </script>
 
